@@ -1,0 +1,225 @@
+/*GLOBALES*/
+*{
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration: none;   
+    color: black;
+}
+li{
+    text-decoration: none;   
+    list-style: none;
+}
+h1{
+    text-align: center;
+    padding: 2%;
+    font-weight: 600;
+    font-style:italic;
+}
+h2{
+    text-align: center;
+    padding: 2%;
+    font-weight: 400;
+    font-style:italic;
+}
+h3{
+    text-align: center;
+    padding: 2%;
+    font-weight: 400;
+    font-style:italic;
+}
+p{
+    text-align: center;
+    padding: 2%;
+    font-weight: 200;
+    font-style:italic;
+}
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: auto 1fr auto;
+  }
+  header {
+    padding: 2rem;
+  }  
+  footer {
+    padding: 2rem;
+    text-align: center;
+  }
+  body {
+    font-family: system-ui, sans-serif;
+  }
+.form{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+label{
+    text-align: center;
+    display: block;
+}
+input{
+  border-color: #000;
+  border-radius: 3%;
+  border-style: solid;
+  width: 90%;
+  height: 30px;
+  margin: .5rem
+}
+.form-button{
+    padding: .5em 1em;
+    border:none;
+    background: rgb(100,200,255);
+    cursor: pointer;
+}
+
+footer{
+    background:white;
+	text-align: center;
+display: flex;
+border-top: #000 2px inset;
+justify-content: space-around;
+}
+/*Encabezado */
+.logo{
+    width: 20%;
+    height: 20%;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.encabezado{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.botonera {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.botonera li {
+    margin: 0 15px; /* Espaciado entre los elementos */
+}
+
+.botonera a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.botonera a:hover {
+    text-decoration: underline; /* Efecto al pasar el mouse */
+}
+/* INDEX */
+.background{
+    background-image: url("./assets/img/backgroung.jpg");
+}
+.galeria {
+    width: 100%;
+    max-width: 1200px;
+    /* background-color: violet; */
+    margin: 0 auto;
+    display: grid;
+    /* background-color: pink; */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* grid-template-rows: auto; */
+    gap: 20px;
+    /* column-gap: 20px; */
+ } 
+.destacados{
+    border: 1px solid black;
+    vertical-align: middle;
+    height: 500px;
+    margin: 20px;
+    float: left;
+}
+.div-imagen{
+    height: 30%;
+    width: 30%;
+    margin: auto;
+    display: block;
+}
+
+.divs-button{
+    margin: 0 auto;
+    display: block;
+    height: 50px;
+    width: 200px;
+    background-color: #8cdef852;
+    color: black;
+    font-size: medium;
+    font-family: cursive;
+}
+@media screen and (max-width: 768px){
+    .galeria {
+        max-width: none;
+        .destacados{
+            height: 540px;
+            width: 90%;  
+            .div-imagen {
+                height: 200px;
+                width: 200px;
+        }}
+    }
+    
+    footer{
+        padding: 1rem;
+        section {
+            padding: 2%;
+            .logo {
+                width: 50px;
+                height: 100%;
+        }
+    }
+}
+}
+/* Galeria */
+
+.centro{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:30px;
+    div{
+        text-align: center;
+        background-color: rgb(255, 255, 255);
+        border:1px solid gray;
+        color:black;
+        width: 300px;
+        height:300px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    .destacados{
+        border: 1px solid black;
+        vertical-align: middle;
+        height: 500px;
+        margin: 20px;
+        float: left;
+    }
+}
+/* Contacto*/
+.contenedor{
+    margin:0 auto;
+    display:flex;
+  align-content: center;
+  .flex-item{
+    border:1px solid black;
+    width: 100%;
+    text-align: center;
+}
+}
