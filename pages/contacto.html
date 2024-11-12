@@ -3,26 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contacto
+    </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="#">
-    <script src="https://kit.fontawesome.com/6fc2b5cb5b.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="../estilos.css">
 </head>
 <body>
     <header class="encabezado">
-        <div class="logo">
-            <img src="../assets/img/logo.png" alt="Logo" class="logo">
-        </div>
-        <nav>
-            <ul class="botonera">
-                <li class="links"> <a href="../index.html"> inicio </a> </li>
-                <li class="links"> <a href="galeria.html">Productos</a> </li>
-                <li class="links"> <a href="contacto.html">contacto </a></li>
-                <li class="links"> <a href="compras.html"> carrito de compra </a></li>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+              <img src="../assets/img/logo.png" alt="Bootstrap" width="50" height="50">
+              </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="../index.html">inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./galeria.html">productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./compras.html">carrito de compras</a>
+              </li>
             </ul>
-        </nav>
-    </header>
+          </div>
+        </div>
+      </nav>
+  </header>
     <main>
+      <div class="background">
+        <h1 class="tituloencabezado">Cafeteria y reposteria JMK</h1>
+      <p class="textoencabezado">Somos una cafeteria de especialidad, desde el año 2021 dando las mejores experiencias para los clientes</p>
+    </div>
         <h1>Contacto</h1>
         <section class="contenedor"> 
           <div class="flex-item">
@@ -32,55 +55,58 @@
                 <li>  <a href="">1140556459</a></li>
                 <li>  <a href="">lautarovallejos14@gmail.com</a></li>
                 <li>  <a href="mailto:lautarovallejos14@gmail.com?Subject=probandoprobando">calle falsa 123- Buenos Aires</a></li>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.8174070738664!2d-58.573854624258466!3d-34.634054272943445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7495c12317d%3A0x8cea287955f0596b!2sPepe!5e0!3m2!1ses!2sar!4v1728876101293!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.8174070738664!2d-58.573854624258466!3d-34.634054272943445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7495c12317d%3A0x8cea287955f0596b!2sPepe!5e0!3m2!1ses!2sar!4v1728876101293!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="maps"></iframe>
              </ul>
 
           </div>
           <div class="flex-item">   <form class="form">
             <label for="nombre">Nombre:</label>
-            <input type="text" value="insertar texto" > <br>
-            <label for="Mail" >Mail</label>
-            <input type="mail" value="insertar texto"><br>
-            <label for="Whatsapp" >telefono</label>
-            <input type="tel" value="insertar texto">
-            <label for="Whatsapp" >mensaje</label>
-            <textarea></textarea>
-            <button type="submit" class="form-button"> Enviar </button>
+            <input type="text" value="insertar nombre" > 
+            <label for="apellido">Apellido:</label>
+            <input type="text" value="insertar apellido"> 
+            <label for="Mail" >Mail:</label>
+            <input type="mail" value="insertar Mail">
+            <label for="Whatsapp" >Whatsapp:</label>
+            <input type="tel" value="insertar Whatsapp">
+            <button type="submit" class="form-button">Enviar</button>
         </form></div>
       
     </section>
     </main>
-    <footer>
-        <section>
-          <h3>Seguinos</h3>
-            <ul>
-               <li>  <a href="">Instagram</a></li>
-               <li>  <a href="">Facebook</a></li>
-               <li>  <a href="">Whastapp</a></li>
-            </ul>
-        </section>
-        <section>
-            <h3>Navegacion</h3>
-            <ul>
-                <li>  <a href="">Inicio</a></li>
-                <li>  <a href="">Productos</a></li>
-                <li>  <a href="">Contacto</a></li>
-            </ul>
-        </section>
-        <section>
-            <ul>
-               <li>  <a href="../assets/img/logo.png"></a></li>
-            </ul>
-        </section>
-        <section>
-            <h3>Contactanos</h3>
-            <ul>
-                <li><a href=""> numero de telefono </a></li>
-                <li><a href=""> mail </a></li>
-                <li><a href=""> ubicacion </a></li>
-            </ul>
-            <img> calle falsa 123
-        </section>
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+      <div class="col mb-3">
+        <a href="../index.html" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+          <img src="../assets/img/logo.png" alt="Logo" class="logo" width="100" height="100">
+        </a>
+        <p class="text-body-secondary">© 2024</p>
+      </div>
+      <div class="col mb-3">
+        <h3>Seguinos</h3>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="www.instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+          <li class="nav-item mb-2"><a href="www.facebook.com"><i class="fa-brands fa-facebook"></i></a></li>
+        </ul>
+      </div>
+  
+      <div class="col mb-3">
+          <h3>Navegacion</h3>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="../index.html">Inicio</a></li>
+          <li class="nav-item mb-2"><a href="./galeria.html">Producto</a></li>
+          <li class="nav-item mb-2"><a href="./compras.html">Compras</a></li>
+          <li class="nav-item mb-2"><a href="./contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+  
+      <div class="col mb-3">
+          <h3>Contactanos</h3>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href=""> <i class="fa-solid fa-phone"></i> </a></li>
+          <li class="nav-item mb-2"><a href=""><i class="fa-regular fa-envelope"></i> </a></li>
+          <li class="nav-item mb-2"><a href="https://www.google.com/maps?sca_esv=93dba3a330e5cf9e&rlz=1C1GEWG_esAR1098AR1099&output=search&q=calle+falsa+123&source=lnms&fbs=AEQNm0CbCVgAZ5mWEJDg6aoPVcBgWizR0-0aFOH11Sb5tlNhd5-FPDAaztYS7m0lA0NrJCuzzXwp-kuIgtsd40z7J9ZYTQ1U3zCqhQmbYXQDcMtX-gbrc_dSt_Yl7a7vy9lcfiYyuVNUKIdREdCt50ZKI02IXU3MTweY2qo1VnSEymVvp4S2hcAcyc91xbjVHt6nPQgCcMQmydkNZB7lvPZPyXZ5_LwmjA&entry=mc&ved=1t:200715&ictx=111">ubicacion </a></li>
+
+        </ul>
+      </div>
     </footer>
 </body>
 </html>
