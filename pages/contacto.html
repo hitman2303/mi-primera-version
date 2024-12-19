@@ -46,10 +46,10 @@
         <h1 class="tituloencabezado">Cafeteria y reposteria JMK</h1>
       <p class="textoencabezado">Somos una cafeteria de especialidad, desde el año 2021 dando las mejores experiencias para los clientes</p>
     </div>
-        <h1>Contacto</h1>
+        <h2>Contacto</h2>
         <section class="contenedor"> 
           <div class="flex-item">
-            <h2>Contactanos</h2>
+            <h3>Contactanos</h3>
             <p>Te esperamos los lunes a sabados de 10:00 am a 20:00 pm </p>
             <ul>
                 <li>  <a href="">1140556459</a></li>
@@ -59,16 +59,24 @@
              </ul>
 
           </div>
-          <div class="flex-item">   <form class="form">
-            <label for="nombre">Nombre:</label>
-            <input type="text" value="insertar nombre" > 
-            <label for="apellido">Apellido:</label>
-            <input type="text" value="insertar apellido"> 
-            <label for="Mail" >Mail:</label>
-            <input type="mail" value="insertar Mail">
-            <label for="Whatsapp" >Whatsapp:</label>
-            <input type="tel" value="insertar Whatsapp">
-            <button type="submit" class="form-button">Enviar</button>
+          <div class="flex-item"> 
+            <form class="form" id="formulario">
+              <label for="nombre">Nombre:</label>
+              <input type="text"  id="nombre"> 
+              <small class="text-danger d-none" id="errorNombre">El nombre es obligatorio.</small>
+              <label for="apellido">Apellido:</label>
+              <input type="text" id="apellido"> 
+              <small class="text-danger d-none" id="errorApellido">El apellido es obligatorio.</small>
+
+              <label for="Mail" >Mail:</label>
+              <input type="mail"  id="mail">
+              <small class="text-danger d-none" id="errorMail">El mail es obligatorio.</small>
+
+              <label for="Whatsapp" >Whatsapp:</label>
+              <input type="tel"  id="whatsapp">
+              <small class="text-danger d-none" id="errorWhatsapp">El numero es obligatorio.</small>
+              <button type="submit" class="form-button" id="enviar">Enviar</button>
+        </form>
         </form></div>
       
     </section>
@@ -108,5 +116,6 @@
         </ul>
       </div>
     </footer>
+    <script src="../js/validacion.js"></script>
 </body>
 </html>

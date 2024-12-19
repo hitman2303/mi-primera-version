@@ -41,7 +41,24 @@
       </nav>
   </header>
     <main>
-  <h1> main</h1>
+  <section class="container">
+    <h1>Carrito de Productos</h1>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody id="tablaCarrito">
+                <!-- Filas dinámicas -->
+            </tbody>
+        </table>
+        <div class="mt-3">
+            <h3>Total: $<span id="totalCarrito">0.00</span></h3>
+            <button type="submit" id="pagar-carrito"> pagar</button>
+          </div>
+  </section>
     </main>
     <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
       <div class="col mb-3">
@@ -77,5 +94,6 @@
         </ul>
       </div>
     </footer>
+    <script src="../js/mostrarcarrito.js"></script>
 </body>
 </html>

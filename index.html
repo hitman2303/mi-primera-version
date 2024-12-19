@@ -53,27 +53,27 @@
                         <img src="./assets/img/productos/brownie oreo.jpg" alt="Brownie oreo" class="div-imagen">
                         <div class="card-body">
                             <h3>Torta brownie oreo</h3>
-                            <p class="precio"><b>$</b>XX.XXX</p>
-                            <p class="descripcion"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta incidunt fugit, iste saepe magni molestias commodi veritatis totam asperiores voluptate laboriosam deserunt voluptatibus sit dolor praesentium, animi, voluptatem minus harum.</p>    
-                            <button class="divs-button">Agregar al carrito</button>
+                            <p class="precio"><b>$</b>30.000</p>
+                            <p class="descripcion"> ¡Déjate tentar por la combinación perfecta de chocolate y galleta! Nuestra Torta Brownie Oreo es un postre irresistible que combina la suavidad de un brownie con el crujiente de las galletas Oreo. Cada bocado es una explosión de sabor, ideal para los amantes del chocolate y las galletas. Perfecta para cualquier ocasión, desde una celebración especial hasta un antojo de media tarde. ¡No podrás dejar de comerla!</p>    
+                            <button class="divs-button" data-nombre="torta brownie oreo" data-precio="30.000">Agregar al carrito</button>
                         </div>
                       </div>
                       <div class="card" style="width: 18rem;">
                         <img src="./assets/img/productos/shot_postre.jpg" alt="Shot postrecitos" class="div-imagen">
                         <div class="card-body">
                             <h3>Postrecitos Shot por docena</h3>
-                            <p class="precio"><b>$</b>XX.XXX</p>
-                            <p class="descripcion"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta incidunt fugit, iste saepe magni molestias commodi veritatis totam asperiores voluptate laboriosam deserunt voluptatibus sit dolor praesentium, animi, voluptatem minus harum.</p>    
-                            <button class="divs-button">Agregar al carrito</button>
+                            <p class="precio"><b>$</b>20.000</p>
+                            <p class="descripcion"> ¡Dale un toque único a tus reuniones con nuestros Postrecitos Shot por Docena! Estos pequeños postres en formato miniatura están diseñados para que disfrutes de una variedad de sabores deliciosos en cada bocado. Con una presentación moderna y sofisticada, son perfectos para fiestas, eventos o simplemente para consentir a tus seres queridos. ¿Por qué conformarte con uno cuando puedes disfrutar de una docena?</p>    
+                            <button class="divs-button" data-nombre="Postrecitos shot por docena" data-precio="20.000">Agregar al carrito</button>
                         </div>
                       </div>
                       <div class="card" style="width: 18rem;">
                         <img src="./assets/img//productos/chessecake.jpg" alt="chessecake" class="div-imagen">
                         <div class="card-body">
                             <h3>New York chessecake</h3>
-                            <p class="precio"><b>$</b>XX.XXX</p>
-                                <p class="descripcion"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta incidunt fugit, iste saepe magni molestias commodi veritatis totam asperiores voluptate laboriosam deserunt voluptatibus sit dolor praesentium, animi, voluptatem minus harum.</p>         
-                            <button class="divs-button">Agregar al carrito</button>
+                            <p class="precio"><b>$</b>30.000</p>
+                                <p class="descripcion"> Transporta tus sentidos a la Gran Manzana con nuestro delicioso New York Cheesecake. Su base crujiente de galleta, combinada con una capa suave y cremosa de queso, te hará sentir como si estuvieras en el corazón de Nueva York. Cada porción es el equilibrio perfecto entre dulzura y cremosidad, ideal para disfrutar en cualquier momento. Si eres un amante del queso y los postres sofisticados, ¡este es el indicado para ti!</p>         
+                            <button class="divs-button" data-nombre="New york chessecake" data-precio="30.000">Agregar al carrito</button>
                         </div>
                       </div>
                 
@@ -83,17 +83,23 @@
                 <section>
             <h2>Nuestras ultimas noticias</h2>
             <p> Inscribite para obtener nuestras ultimas noticias</p>
-            <form class="form">
-                <label for="nombre">Nombre:</label>
-                <input type="text" value="insertar nombre" > 
-                <label for="apellido">Apellido:</label>
-                <input type="text" value="insertar apellido"> 
-                <label for="Mail" >Mail:</label>
-                <input type="mail" value="insertar Mail">
-                <label for="Whatsapp" >Whatsapp:</label>
-                <input type="tel" value="insertar Whatsapp">
-                <button type="submit" class="form-button">Enviar</button>
-            </form>
+            <form class="form" id="formulario">
+              <label for="nombre">Nombre:</label>
+              <input type="text"  id="nombre"> 
+              <small class="text-danger d-none" id="errorNombre">El nombre es obligatorio.</small>
+              <label for="apellido">Apellido:</label>
+              <input type="text" id="apellido"> 
+              <small class="text-danger d-none" id="errorApellido">El apellido es obligatorio.</small>
+
+              <label for="Mail" >Mail:</label>
+              <input type="mail"  id="mail">
+              <small class="text-danger d-none" id="errorMail">El mail es obligatorio.</small>
+
+              <label for="Whatsapp" >Whatsapp:</label>
+              <input type="tel"  id="whatsapp">
+              <small class="text-danger d-none" id="errorWhatsapp">El numero es obligatorio.</small>
+              <button type="submit" class="form-button" id="enviar">Enviar</button>
+        </form>
         </section>
     </main>
     <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
@@ -131,5 +137,8 @@
           </ul>
         </div>
       </footer>
-</body>
+<script src="./js/agregarcarrito.js"></script>
+<script src="./js/validacion.js"></script>
+
+    </body>
 </html>
